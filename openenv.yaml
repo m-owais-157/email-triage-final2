@@ -1,0 +1,4 @@
+name: email-triage-openenv
+entrypoint:
+  module: env.server.app
+  app: app
