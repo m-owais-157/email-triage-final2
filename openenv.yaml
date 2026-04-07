@@ -1,4 +1,14 @@
-name: email-triage-openenv
-entrypoint:
-  module: env.server.app
-  app: app
+spec_version: 1
+name: email-triage-final2
+
+type: http
+
+runtime:
+  language: python
+  version: "3.11"
+
+app:
+  module: server.app
+  object: app
+
+port: 7860
