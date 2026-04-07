@@ -1,0 +1,4 @@
+fastapi
+uvicorn
+requests
+openenv>=0.2.0
