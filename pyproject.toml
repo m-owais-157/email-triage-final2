@@ -1,23 +1,16 @@
 [build-system]
-requires = ["setuptools>=68", "wheel"]
+requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "email-triage-final2"
-version = "1.0.0"
-description = "OpenEnv environment for email triage"
-readme = "README.md"
-requires-python = ">=3.10"
+version = "0.1.0"
 dependencies = [
-    "fastapi>=0.100.0,<0.112.0",
-    "uvicorn>=0.29.0",
-    "requests>=2.31.0",
-    "openenv-core>=0.2.0",
+    "fastapi",
+    "uvicorn",
+    "requests",
+    "openenv>=0.2.0"
 ]
 
 [project.scripts]
-server = "server.app:main"
-
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["server*"]
+server = "server.app:app"
